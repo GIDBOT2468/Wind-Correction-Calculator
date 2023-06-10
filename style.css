@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.image-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Added property */
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: dodgerblue;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: dodgerblue;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2699fb;
+  }
+
+.box-container {
+    display: inline-block;
+    text-align: center;
+    width: 22%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.box {
+    text-align: center;
+    height: 50px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box h2 {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.box-container h3 {
+    margin: 2px;
+}
+
+
+
