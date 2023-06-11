@@ -107,7 +107,7 @@ body {
 }
 
 #distanceStyle3 {
-  float:right; width: 60%;
+  float:right; width: 60%; margin: 0px;
 }
 
 #time, #fuelTime {
@@ -141,11 +141,11 @@ body {
   }
 
   #distanceStyle {
-    width: 40%;
+    width: 30%;
   }
 
   #distanceStyle3 {
-    float:right; width: 50%;
+    float:right; width: 60%;
   }
 
   .right {
@@ -160,6 +160,10 @@ body {
   
   #windCor {
     margin-bottom: 180px;
+  }
+
+  .container-wrapper {
+    padding-bottom: 920px;
   }
 }
 

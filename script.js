@@ -90,3 +90,10 @@ function calculateFuel() {
     timeText.textContent = hours + " hours, " + minutes + " minutes"
 }
 
+function calculateTas() {
+    var pa = Number(document.getElementById('pa').value);
+    var oat = Number(document.getElementById('oat').value);
+    var ias = Number(document.getElementById('tasIas').value);
+    var tas = document.getElementById('tasCalc');
+    tas.textContent = Math.round(ias * 1 / Math.pow(Math.pow((288.15 - (pa * 1 + (288.15 - pa * 0.0019812) / 0.0019812 * (1 - Math.pow((288.15 - pa * 0.0019812) / (oat * 1 + 273.15), 0.234969))) * 0.0019812) / 288.15, 1 / 0.234969), .5)) + "kts";
+}
