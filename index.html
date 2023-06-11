@@ -49,12 +49,12 @@
         </div>
         
         <div class="form-group right">
-          <label for="tas">True Airspeed (knots)</label>
+          <label for="tas">True Airspeed</label>
           <input type="number" pattern="[0-9]*" id="tas" value="100" min="0" step="1" onChange="updateInputs()" required>
         </div>
         
         <div class="form-group left">
-          <label for="windSpeed">Wind Speed (knots)</label>
+          <label for="windSpeed">Wind Speed</label>
           <input type="number" pattern="[0-9]*" id="windSpeed" value="0" min="0" step="1" onChange="updateInputs()" required>
         </div>
         
@@ -90,7 +90,7 @@
     <div class="container">
       <div style="padding-bottom: 90px">  
         <div class="form-group" id="distanceStyle">
-          <label for="distance">Distance (NM)</label>
+          <label for="distance">Distance</label>
           <input type="number" pattern="[0-9]*" id="distance" value="0" min="0" max="360" step="1" onChange="calculateTime(this.value)" required>
         </div>     
         <div class="box-container" id="distanceStyle3">
@@ -103,11 +103,11 @@
       <hr>
       <div id="fuelStyle">
         <div class="form-group" id="fuelStyle2">
-          <label for="fuelBurn">Fuel Burn (Litres/Hour)</label>
+          <label for="fuelBurn">Fuel Burn</label>
           <input type="number" pattern="[0-9]*" id="fuelBurn" value="0" min="0" step="1" onChange="calculateFuel()" required>
         </div>
         <div class="form-group" id="fuelStyle4">
-          <label for="fuelAmount">Fuel (Litres)</label>
+          <label for="fuelAmount">Fuel Amount</label>
           <input type="number" pattern="[0-9]*" id="fuelAmount" value="0" min="0" step="1" onChange="calculateFuel()" required>
         </div>
         <div class="box-container" id="fuelStyle6">

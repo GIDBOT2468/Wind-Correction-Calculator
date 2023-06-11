@@ -148,18 +148,14 @@ body {
     float:right; width: 50%;
   }
 
-  #fuelAmount {
-    margin-top: 18px;
-  }
-
   .right {
     float:left;
-    width: 49%;
+    width: 45%;
   }
 
   .left {
     float:right;
-    width: 49%;
+    width: 45%;
   }
   
   #windCor {
