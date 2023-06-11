@@ -45,22 +45,22 @@
       <form>
         <div class="form-group">
           <label for="track">Track (degrees)</label>
-          <input type="number" id="track" value="0" min="0" max="360" step="1" onChange="updateInputs()" required>
+          <input type="number" pattern="[0-9]*" id="track" value="0" min="0" max="360" step="1" onChange="updateInputs()" required>
         </div>
         
         <div class="form-group">
           <label for="tas">True Airspeed (knots)</label>
-          <input type="number" id="tas" value="100" min="0" step="1" onChange="updateInputs()" required>
+          <input type="number" pattern="[0-9]*" id="tas" value="100" min="0" step="1" onChange="updateInputs()" required>
         </div>
         
         <div class="form-group">
           <label for="windSpeed">Wind Speed (knots)</label>
-          <input type="number" id="windSpeed" value="0" min="0" step="1" onChange="updateInputs()" required>
+          <input type="number" pattern="[0-9]*" id="windSpeed" value="0" min="0" step="1" onChange="updateInputs()" required>
         </div>
         
         <div class="form-group">
           <label for="windDir">Wind Direction (degrees)</label>
-          <input type="number" id="windDir" value="0" min="0" max="360" step="1" onChange="updateInputs()" required>
+          <input type="number" pattern="[0-9]*" id="windDir" value="0" min="0" max="360" step="1" onChange="updateInputs()" required>
         </div>
       </form>
 
@@ -91,7 +91,7 @@
       <div style="padding-bottom: 90px">  
         <div class="form-group" id="distanceStyle">
           <label for="distance">Distance (NM)</label>
-          <input type="number" id="distance" value="0" min="0" max="360" step="1" onChange="calculateTime(this.value)" required>
+          <input type="number" pattern="[0-9]*" id="distance" value="0" min="0" max="360" step="1" onChange="calculateTime(this.value)" required>
         </div>     
         <div class="box-container" id="distanceStyle3">
           <label>Time</label>
@@ -104,11 +104,11 @@
       <div id="fuelStyle">
         <div class="form-group" id="fuelStyle2">
           <label for="fuelBurn">Fuel Burn (Litres/Hour)</label>
-          <input type="number" id="fuelBurn" value="0" min="0" step="1" onChange="calculateFuel()" required>
+          <input type="number" pattern="[0-9]*" id="fuelBurn" value="0" min="0" step="1" onChange="calculateFuel()" required>
         </div>
         <div class="form-group" id="fuelStyle4">
           <label for="fuelAmount">Fuel (Litres)</label>
-          <input type="number" id="fuelAmount" value="0" min="0" step="1" onChange="calculateFuel()" required>
+          <input type="number" pattern="[0-9]*" id="fuelAmount" value="0" min="0" step="1" onChange="calculateFuel()" required>
         </div>
         <div class="box-container" id="fuelStyle6">
           <div class="box">
