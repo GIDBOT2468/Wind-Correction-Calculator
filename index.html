@@ -42,27 +42,27 @@
       </svg>
 
 
-      <form>
-        <div class="form-group">
-          <label for="track">Track (degrees)</label>
+      <div id="windCor">
+        <div class="form-group left">
+          <label for="track">Track</label>
           <input type="number" pattern="[0-9]*" id="track" value="0" min="0" max="360" step="1" onChange="updateInputs()" required>
         </div>
         
-        <div class="form-group">
+        <div class="form-group right">
           <label for="tas">True Airspeed (knots)</label>
           <input type="number" pattern="[0-9]*" id="tas" value="100" min="0" step="1" onChange="updateInputs()" required>
         </div>
         
-        <div class="form-group">
+        <div class="form-group left">
           <label for="windSpeed">Wind Speed (knots)</label>
           <input type="number" pattern="[0-9]*" id="windSpeed" value="0" min="0" step="1" onChange="updateInputs()" required>
         </div>
         
-        <div class="form-group">
-          <label for="windDir">Wind Direction (degrees)</label>
+        <div class="form-group right">
+          <label for="windDir">Wind Direction</label>
           <input type="number" pattern="[0-9]*" id="windDir" value="0" min="0" max="360" step="1" onChange="updateInputs()" required>
         </div>
-      </form>
+      </div>
 
       <hr>
 
@@ -118,7 +118,7 @@
       </div>
       <hr>
       
-
+      <p style="color: #ccc">Copyright © 2023 Gideon Dyke</p>
 
 
     </div>
