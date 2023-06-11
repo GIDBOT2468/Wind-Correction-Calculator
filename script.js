@@ -55,6 +55,9 @@ function updateInputs() {
 
     rotateHeading(heading)
     results(wca, heading, gs)
+
+    var distance = document.getElementById("distance").value;
+    calculateTime(distance)
 }
 
 function calculateWindCorrectionAngle(windSpeed, windDirRad, courseRad, airspeed) {
@@ -68,7 +71,22 @@ function calculateGroundSpeed(windSpeed, windDirRad, courseRad, airspeed) {
     return groundSpeed;
 }
 
-function calculateGroundSpeedOld(windSpeed, windDirRad, courseRad, airspeed) {  
-    var groundSpeed = Math.sqrt(Math.pow(airspeed, 2) + Math.pow(windSpeed, 2) - (2 * airspeed * windSpeed * Math.cos(courseRad - windDirRad))); 
-    return groundSpeed;
+function calculateTime(distance) {  
+    var gsResult = document.getElementById("gsResult").textContent.split("k")[0];
+    var time = Math.round(distance / gsResult * 60);
+
+    var timeResult = document.getElementById("time");
+    timeResult.textContent = time + " minutes";
 }
+
+function calculateFuel() {
+    var f = document.getElementById("fuelAmount").value;
+    var fBurn = document.getElementById("fuelBurn").value;
+    var timeText = document.getElementById("fuelTime");
+
+    var hours = Math.floor(f/fBurn);
+    var minutes = Math.round(60 * (f/fBurn - hours));
+
+    timeText.textContent = hours + " hours, " + minutes + " minutes"
+}
+
