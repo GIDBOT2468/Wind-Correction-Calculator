@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wind Correction Calculator</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
   <div class="container-wrapper">
@@ -83,30 +83,30 @@
     </div>
     <div class="container">
       <div style="padding-bottom: 90px">  
-        <div class="form-group" style="float:left; width: 30%;">
+        <div class="form-group" id="distanceStyle">
           <label for="distance">Distance (NM)</label>
-          <input type="number" id="distance" value="0" min="0" max="360" step="1" style="line-height: 27px;" onChange="calculateTime(this.value)" required>
+          <input type="number" id="distance" value="0" min="0" max="360" step="1" onChange="calculateTime(this.value)" required>
         </div>     
-        <div class="box-container" style="float:right; width: 60%;">
+        <div class="box-container" id="distanceStyle3">
           <label>Time</label>
           <div class="box">
-              <h2 id="time" style="margin: 0px;">0 minutes</h2>
+              <h2 id="time">0 minutes</h2>
           </div>
         </div>
       </div>
       <hr>
-      <div style="padding-bottom: 15px">
-        <div class="form-group" style="float:left; width: 45%;">
+      <div id="fuelStyle">
+        <div class="form-group" id="fuelStyle2">
           <label for="fuelBurn">Fuel Burn (Litres/Hour)</label>
-          <input type="number" id="fuelBurn" value="0" min="0" step="1" style="line-height: 27px;" onChange="calculateFuel()" required>
+          <input type="number" id="fuelBurn" value="0" min="0" step="1" onChange="calculateFuel()" required>
         </div>
-        <div class="form-group" style="float:right; width: 45%;">
+        <div class="form-group" id="fuelStyle4">
           <label for="fuelAmount">Fuel (Litres)</label>
-          <input type="number" id="fuelAmount" value="0" min="0" step="1" style="line-height: 27px;" onChange="calculateFuel()" required>
+          <input type="number" id="fuelAmount" value="0" min="0" step="1" onChange="calculateFuel()" required>
         </div>
-        <div class="box-container" style="width: 100%; margin: 0px;">
+        <div class="box-container" id="fuelStyle6">
           <div class="box">
-              <h2 id="fuelTime" style="margin: 0px;">0 hours, 0 minutes</h2>
+              <h2 id="fuelTime">0 hours, 0 minutes</h2>
           </div>
         </div>
       </div>
